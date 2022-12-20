@@ -1,9 +1,15 @@
+import Footer from "./Components/Footer";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Input from "./Components/Input";
+import Banco from "./Components/Banco";
+
 function App() {
   return (
     <div className="App">
 
-      <h2> Hello world</h2>
-      
+      <Banco />
+
+      <Footer />
     </div>
   );
 }
