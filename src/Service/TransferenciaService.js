@@ -10,6 +10,15 @@ class TransferenciaService extends ApiService{
         return this.get("/");
     }
 
+    readByDate(startDate,endDate) {
+        return this.get(`/byTempo?startDate=${startDate}&endDate=${endDate}`);
+    }
+
+    findByOperator(operatorName){
+        return this.get(`/byNome?operatorName=${operatorName}`);
+
+    }
+
 }
 
 export default TransferenciaService
